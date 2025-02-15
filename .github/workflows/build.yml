@@ -95,4 +95,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: aseprite
-        path: bin/aseprit.exe
+        path: bin\aseprite.exe
