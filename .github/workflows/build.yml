@@ -92,9 +92,6 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: aseprite
-        path: |
-          E:/aseprite/build/bin/data
-          E:/aseprite/build/bin/aseprite.exe
