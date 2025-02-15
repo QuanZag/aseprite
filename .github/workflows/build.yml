@@ -11,12 +11,9 @@ jobs:
         ui: [gui, cli]
         scripting: [lua, noscripts]
         exclude:
-          - build_type: Debug
+          - build_type: RelWithDebInfo
             ui: gui
-          - build_type: RelWithDebInfo
-            ui: cli
-          - build_type: RelWithDebInfo
-            scripting: noscripts
+            scripting: lua
     steps:
     - uses: actions/checkout@v4
       with:
