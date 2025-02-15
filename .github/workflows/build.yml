@@ -10,7 +10,7 @@ jobs:
         build_type: [RelWithDebInfo, Debug]
         ui: [gui, cli]
         scripting: [lua, noscripts]
-        exclude:
+        include:
           - build_type: RelWithDebInfo
             ui: gui
             scripting: lua
